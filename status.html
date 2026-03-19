@@ -281,7 +281,7 @@
         <div class="stat-value loading" id="stat-servers">…</div>
       </div>
       <div class="stat">
-        <div class="stat-label">Users</div>
+        <div class="stat-label">User Installs</div>
         <div class="stat-value loading" id="stat-users">…</div>
       </div>
       <div class="stat">
@@ -359,7 +359,7 @@
 
         const users = document.getElementById('stat-users');
         users.className = 'stat-value';
-        users.textContent = d.userCount ?? '—';
+        users.textContent = d.userInstallCount ?? '—';
 
         const now = new Date();
         document.getElementById('last-updated').textContent =
